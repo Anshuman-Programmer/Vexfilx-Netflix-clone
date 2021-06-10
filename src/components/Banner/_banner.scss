@@ -1,0 +1,132 @@
+.banner{
+    height: 436px;
+    position: relative;
+    color: white;
+    object-fit: contain;
+
+    .banner__contents{
+        margin-left: 30px;
+        padding-top: 140px;
+
+        .banner__title{
+            font-size: 3rem;
+            font-weight: 700;
+            padding-bottom: 0.3rem;
+        }
+
+        .banner__buttons{
+
+            .banner__button{
+                cursor: pointer;
+                color: #fff;
+                outline: none;
+                border: none;
+                font-weight: 700;
+                border-radius: 0.2vw;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                margin-right: 1rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                background-color: rgba(51, 51, 51, 0.5);
+            }
+
+            .banner__button:hover{
+                color: #000;
+                background-color: #e6e6e6;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        .banner__descrition{
+            line-height: 1.3;
+            padding-top: 1rem;
+            font-size: 0.8rem;
+            max-width: 360px;
+            height: 80px;
+            font-weight: 500;
+        }
+    }
+
+    .banner__fade{
+        height: 7.4rem;
+        background: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+    }
+}
+
+@media only screen and (max-width: 440px){
+
+    .banner{
+    
+        .banner__contents{
+            margin-left: 30px;
+    
+            .banner__title{
+                font-size: 2rem;
+            }
+    
+            .banner__buttons{
+
+                .banner__button{
+                    padding-left: 1.3rem;
+                    padding-right: 1.3rem;
+                    padding-top: 0.4rem;
+                    padding-bottom: 0.4rem;
+                }
+    
+            }
+    
+            .banner__descrition{
+                line-height: 1.3;
+                padding-top: 1rem;
+                padding-right: 1rem;
+                font-size: 0.7rem;
+                max-width: 360px;
+                font-weight: 500;
+            }
+        }
+    
+        .banner__fade{
+            height: 9rem;
+            background: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 290px){
+
+    .banner{
+    
+        .banner__contents{
+            margin-left: 30px;
+    
+            .banner__title{
+                font-size: 2rem;
+            }
+    
+            .banner__buttons{
+
+                .banner__button{
+                    padding-left: 1.3rem;
+                    padding-right: 1.3rem;
+                    padding-top: 0.4rem;
+                    padding-bottom: 0.4rem;
+                }
+    
+            }
+    
+            .banner__descrition{
+                display: none;
+            }
+        }
+    
+        .banner__fade{
+            height: 14rem;
+            background: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+        }
+    }
+
+}
+

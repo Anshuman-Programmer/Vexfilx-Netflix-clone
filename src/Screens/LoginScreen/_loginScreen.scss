@@ -1,0 +1,428 @@
+.loginScreen{
+    
+    background-color: black;
+
+    .loginScreen__background{
+        height: 100vh;
+        background: url('../../assets/images/Netflix-bg.jpg');
+        background-position: center center;
+        background-size: cover;
+
+        
+
+        .loginScreen__logo{
+            position: absolute;
+            width: 150px;
+            left: 40px;
+            object-fit: contain;
+            top: 20px;
+        }
+
+        .loginScreen__button{
+            right: 40px;
+            position: absolute;
+            top: 20px;
+            padding: 10px 20px;
+            color: white;
+            background-color: #e50914;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .loginScreen__gradient{
+            width: 100%;
+            z-index: 1;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.4);
+            background-image: linear-gradient(
+                to top, rgba(0,0,0,0.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,0.8) 100%
+            );
+        }
+    
+    }
+
+    .loginScreen__body{
+        z-index: 1;
+        color: #fff;
+        padding: 20px;
+        position: absolute;
+        top: 15%;
+        text-align: center;
+        left: 0;
+        right: 0;
+
+
+    
+        h1{
+            margin: 0 auto;
+            max-width: 40rem;
+            font-size: 3.125rem;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        h2{
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        h3{
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        .loginScreen__input{
+
+            margin-top: 20px;
+            
+            form{
+
+                input{
+                    padding: 20px 10px;
+                    outline-width: 0;
+                    width: 30%;
+                    max-width: 600px;
+                }
+
+                .loginScreen__getStarted{
+                    padding: 20px 40px;
+                    font-size: 1rem;
+                    color: white;
+                    background-color: #e50914;
+                    font-weight: 700;
+                    border: none;
+                    cursor: pointer;
+                }
+
+
+            }
+
+        }
+    
+    }
+
+    .loginScreen__divider{
+        width: 100%;
+        height: 10px;
+        background-color: rgb(32, 32, 32);
+    }
+
+    .loginScreen__aboutUs{
+
+        display: flex;
+        align-items: center;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        .loginScreen__aboutUsDetails{
+            color: white;
+            width: 50%;
+            padding-right: 20px;
+
+            h1{
+                font-size: 3.2rem;
+                margin-bottom: 1rem;
+                line-height: 1.2;
+            }
+
+            p{
+                font-size: 1.7rem;
+            }
+        }
+
+        .loginScreen__aboutUsImage{
+            width: 50%;
+            justify-content: center;
+            display: flex;
+            
+            .loginScreen__video{
+                width: 100%;
+                justify-content: center;
+                display: flex;
+
+                img{
+                    width: 80%;
+                    
+                }    
+            }
+            
+        }
+    }
+
+    .loginScreen__questions{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        color: white;
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+        h1{
+            font-size: 3.2rem;
+            margin-bottom: 3rem;
+            line-height: 1.2;
+        }
+    }
+
+    .loginScreen__input2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5rem;
+
+        p{
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 1.2rem;
+            max-width: 80%;
+        }
+        
+        form{
+            width: 100%;
+            justify-content: center;
+            display: flex;
+
+            input{
+
+                padding: 20px 10px;
+                outline-width: 0;
+                width: 40%;
+                max-width: 600px;
+            }
+
+            .loginScreen__getStarted2{
+                padding: 20px 40px;
+                font-size: 1rem;
+                color: white;
+                background-color: #e50914;
+                font-weight: 700;
+                border: none;
+                cursor: pointer;
+            }
+
+
+        }
+
+    }
+    
+    footer{
+
+        width: 100%;
+
+        .footer_block{
+
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5rem;
+
+            h2{
+                color: gray;
+                font-size: 16px;
+                font-weight: 400;
+                padding-bottom: 2rem;
+                cursor: pointer;
+            }
+
+            .footer__links{
+
+                display: flex;
+                justify-content: space-between;
+
+                ul{
+
+                    margin-block-start: 0em !important;
+                    padding-inline-start: 0px;
+
+                    li{
+                        font-size: 14px;
+                        color: gray;
+                        text-decoration: none;
+                        list-style: none;
+                        margin-bottom: 1rem;
+                        cursor: pointer;
+                    }
+
+                    li:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .loginScreen{
+
+        .loginScreen__background{
+    
+            .loginScreen__logo{
+                width: 100px;
+                left: 20px;
+            }
+    
+            .loginScreen__button{
+                right: 20px;
+                padding: 8px 16px;
+
+            }
+    
+            .loginScreen__gradient{
+                width: 100%;
+                z-index: 1;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.4);
+                background-image: linear-gradient(
+                    to top, rgba(0,0,0,0.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,0.8) 100%
+                );
+            }
+        
+        }
+
+        .loginScreen__body{
+            
+            margin-top: 10%;
+        
+            h1{
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+    
+            h2{
+                font-size: 1rem;
+            }
+    
+            h3{
+                font-size: 0.8rem;
+            }
+
+            .loginScreen__input{
+                
+                form{
+    
+                    input{
+                        
+                        display: none;
+
+                    }
+    
+                    .loginScreen__getStarted{
+                        padding: 20px 40px;
+                        font-size: 1rem;
+                        color: white;
+                        background-color: #e50914;
+                        font-weight: 700;
+                        border: none;
+                        cursor: pointer;
+                    }
+    
+    
+                }
+    
+            }
+
+        }
+
+        .loginScreen__aboutUs{
+
+            flex-direction: column;
+    
+            .loginScreen__aboutUsDetails{
+                width: 100%;
+                margin-bottom: 1rem;
+    
+                h1{
+                    font-size: 2rem;
+                }
+    
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+    
+            .loginScreen__aboutUsImage{
+                width: 100%;
+                margin-bottom: 1rem;
+                
+                .loginScreen__video{
+
+                    width: 100%;
+    
+                    img{
+                        width: 80%;
+                        
+                    }    
+                }
+                
+            }
+        }
+
+        .loginScreen__questions{
+
+            max-width: 80%;
+
+            h1{
+                font-size: 1.8rem;
+            }
+        }
+
+        .loginScreen__input2{
+    
+            p{
+
+                font-size: 0.8rem;
+                max-width: 90%;
+            }
+            
+            form{
+                input{
+    
+                    display: none;
+                }
+    
+                .loginScreen__getStarted2{
+                    font-size: 1rem;
+                }
+    
+    
+            }
+    
+        }
+
+        footer{
+
+            width: 100%;
+    
+            .footer_block{
+    
+                max-width: 90%;
+    
+                .footer__links{
+    
+                    display: inline-block;
+    
+                    ul{
+
+                        padding-bottom: 2rem;
+    
+    
+                    }
+                }
+            }
+        }
+    
+
+    }
+
+
+}
